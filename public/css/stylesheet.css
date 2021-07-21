@@ -1,0 +1,67 @@
+/*        main.phpのcss       */
+body {
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+
+header {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #7bd9018d;
+  color: #ff1616a2;
+}
+
+.title-logo {
+  margin-left: 5%;
+}
+
+h1 {
+  font-size: 20pt;
+}
+
+.menu-list {
+  width: 50%;
+}
+
+ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 15pt;
+}
+
+.container {
+  background-color: #11a8cd;
+}
+
+footer {
+  height: 60px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  background-color: #7bd9018d;
+}
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+  color: #ff1616a2;
+}
+
+/*        indexのcss        */
+
+.typing-container-inner {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.typing-image {
+  margin-top: 5px;
+  width: 60vw;
+  height: 80vh;
+}
