@@ -13,16 +13,16 @@
     <div id="wrapper">
       <header>
         <div class="title-logo">
-          <h1>タイピングゲーム</h1>
+          <h1><a href="/">タイピングゲーム</a></h1>
         </div>
         <div class="menu-list">
-          <ul>
-            <ol>遊び方</ol>
-            <ol>図鑑</ol>
+          <ul class="menu-list-ul">
+            <ol><a href="/how-to-play">遊び方</a></ol>
+            <ol><a href="/">図鑑</a></ol>
             @if(Auth::check())
-              <ol>ログアウト</ol>
+              <ol><a href="/logout">ログアウト</a></ol>
             @else
-              <ol>ログイン</ol>
+              <ol><a href="/login">ログイン</a></ol>
             @endif
           </ul>
         </div>

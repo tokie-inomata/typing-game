@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', 'MainController@index');
+Route::get('/',            'MainController@index');
+Route::get('/how-to-play', 'MainController@how_to');
+Route::get('/login',       'MainController@login');
+Route::post('/login',      'MainController@login_route')->name('login.route');
+Route::get('/logout',      'MainController@logout');

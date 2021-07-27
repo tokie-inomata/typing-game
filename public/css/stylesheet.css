@@ -24,15 +24,24 @@ h1 {
   font-size: 20pt;
 }
 
+h1 a:visited, h1 a {
+  color: #ff1616a2;
+  text-decoration: none;
+}
+
 .menu-list {
   width: 50%;
 }
 
-ul {
+.menu-list-ul {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
   font-size: 15pt;
+}
+
+.menu-list-ul ol a:visited {
+  color: #ff1616a2;
 }
 
 .container {
@@ -64,4 +73,62 @@ footer {
   margin-top: 5px;
   width: 60vw;
   height: 80vh;
+}
+
+/*        how-to-playのcss        */
+
+.how-to-container-title h2 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 25pt;
+}
+
+.how-to-container-ul {
+  width: 30%;
+  margin: 0 auto;
+  font-size: 15pt;
+  line-height: 3.0;
+}
+
+.how-to-container-inner h3 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 20pt;
+}
+
+/*         login        */
+
+.auth-container {
+  display: flex;
+  line-height: 2.5;
+}
+
+.login-title, .entry-title {
+  text-align: center;
+}
+
+.login-container, .entry-container {
+  width: 80%;
+}
+
+.login-form, .entry-form {
+  margin-left: 35%;
+}
+
+.login-form dt, .entry-form dt {
+  width: 25%;
+}
+
+.login-form dd, .entry-form dd {
+  width: 50%;
+}
+
+.login-btn {
+  margin-top: 30px;
+  margin-left: 15%;
+}
+
+.entry-btn {
+  margin-top: 30px;
+  margin-left: 20%;
 }
