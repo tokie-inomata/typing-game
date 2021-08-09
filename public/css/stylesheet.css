@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-.wrapper {
+#wrapper {
   min-height: 100vh;
   position: relative;
 }
@@ -49,7 +49,7 @@ h1 a:visited, h1 a {
 }
 
 footer {
-  height: 60px;
+  height: 69px;
   width: 100vw;
   position: absolute;
   bottom: 0;
@@ -64,15 +64,28 @@ footer {
 
 /*        indexのcss        */
 
-.typing-container-inner {
+#typing-container-inner {
   margin: 0 auto;
+  min-height: 80vh;
+  position: relative;
   text-align: center;
 }
 
 .typing-image {
-  margin-top: 5px;
   width: 60vw;
   height: 80vh;
+  left: 20%;
+  position: absolute;
+}
+
+#start {
+  top: 350px;
+  left: 40%;
+  padding-left: 20px;
+  font-size: 40pt;
+  letter-spacing: 20px;
+  position: absolute;
+  background-color: #f4eb46;
 }
 
 /*        how-to-playのcss        */
@@ -131,4 +144,82 @@ footer {
 .entry-btn {
   margin-top: 30px;
   margin-left: 20%;
+}
+
+/*        管理用画面共通        */
+
+.admin-header, .admin-footer {
+  background-color: #3e3e3e;
+  color: #dedede;
+}
+
+.admin-header {
+  border-bottom: 1px solid #3e3e3e;
+}
+
+.admin-title-logo {
+  width: 30%;
+}
+
+.admin-title-logo h1 {
+  margin-left: 25%;
+}
+
+.admin-menu-list {
+  width: 70%;
+}
+
+.admin-menu-list-ul {
+  margin: 0;
+  display: flex;
+}
+
+.admin-menu-list-ul ol a:visited {
+  color: #dedede;
+}
+
+.admin-menu-list-ul ol {
+  width: 20%;
+  height: 70px;
+  padding-left: 0;
+  display: inline-block;
+  border-right: 1px solid #3e3e3e;
+  background-color: #696969;
+  text-align: center;
+  line-height: 65px;
+}
+
+.question-contener {
+  height: 90vh;
+  background-color: #696969;
+  color: #dedede;
+}
+
+.admin-copyright {
+  text-align: center;
+}
+
+/*        問題文管理画面        */
+
+.question-title h2 {
+  margin: 0;
+  text-align: center;
+  line-height: 6.0;
+}
+
+.question-index-inner table {
+  margin-top: 30px;
+  margin-left: 20%;
+  width: 60%;
+  border: 1px solid #dedede;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.question-index-inner table th, .question-index-inner table td {
+  border: 1px solid #dedede;
+}
+
+.question-index-inner table th:first-child, .question-index-inner table td:first-child {
+  width: 10%;
 }
