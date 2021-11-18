@@ -88,6 +88,24 @@ footer {
   background-color: #f4eb46;
 }
 
+#tree {
+  top: 60px;
+  left: 45%;
+  position: absolute;
+}
+
+#flower {
+  top: 180px;
+  left: 28%;
+  position: absolute;
+}
+
+#grass {
+  top: 300px;
+  left: 60%;
+  position: absolute;
+}
+
 /*        how-to-playのcss        */
 
 .how-to-container-title h2 {
@@ -172,6 +190,7 @@ footer {
 .admin-menu-list-ul {
   margin: 0;
   display: flex;
+  justify-content: flex-end;
 }
 
 .admin-menu-list-ul ol a:visited {
@@ -189,7 +208,7 @@ footer {
   line-height: 65px;
 }
 
-.question-contener {
+.main-container {
   height: 90vh;
   background-color: #696969;
   color: #dedede;
@@ -201,10 +220,15 @@ footer {
 
 /*        問題文管理画面        */
 
-.question-title h2 {
+.title h2 {
   margin: 0;
   text-align: center;
   line-height: 6.0;
+}
+
+.question-index-inner {
+  height: 58vh;
+  overflow-y: scroll;
 }
 
 .question-index-inner table {
@@ -220,6 +244,20 @@ footer {
   border: 1px solid #dedede;
 }
 
-.question-index-inner table th:first-child, .question-index-inner table td:first-child {
-  width: 10%;
+.question-index-inner table th {
+  width: 20%;
+}
+
+.question-index-inner table td {
+  width: 40%;
+}
+
+.result-modal {
+  display: none;
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  top: 100px;
+  left: 25%;
+  background-color: #fff;
 }

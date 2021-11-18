@@ -17,6 +17,10 @@ class CreateQuestionsTable extends Migration
             $table->bigIncrements('id');
             $table->string('jp_question');
             $table->string('ro_question');
+            $table->string('insect_name');
+            $table->string('on_image');
+            $table->string('off_image');
+            $table->integer('type');
             $table->timestamps();
         });
     }

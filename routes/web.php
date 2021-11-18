@@ -22,3 +22,5 @@ Route::post('/login',      'MainController@login_route')->name('login.route');
 Route::get('/logout',      'MainController@logout');
 
 Route::get('/question', 'QuestionController@index');
+
+Route::get('/ajax/question', 'ajax\QuestionController@question');

@@ -18,8 +18,7 @@
         <div class="admin-menu-list">
           <ul class="admin-menu-list-ul">
             <ol><a href="/">ゲーム画面へ戻る</a></ol>
-            <ol><a href="">問題一覧</a></ol>
-            <ol><a href="">昆虫一覧</a></ol>
+            <ol><a href="/question">問題一覧</a></ol>
             <ol><a href="">ユーザー一覧</a></ol>
             <ol><a href="/logout">ログアウト</a></ol>
           </ul>
