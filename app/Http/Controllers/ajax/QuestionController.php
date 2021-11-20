@@ -14,4 +14,10 @@ class QuestionController extends Controller
 
         return $questions;
     }
+
+    public function pictureBook(Request $request)
+    {
+        session()->put('getInsect', $request->getsId);
+        return;
+    }
 }

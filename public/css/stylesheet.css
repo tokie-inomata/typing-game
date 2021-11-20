@@ -35,6 +35,7 @@ h1 a:visited, h1 a {
 
 .menu-list-ul {
   margin-top: 20px;
+  margin-right: 100px;
   display: flex;
   justify-content: space-around;
   font-size: 15pt;
@@ -44,16 +45,21 @@ h1 a:visited, h1 a {
   color: #ff1616a2;
 }
 
+.menu-list-ul ol {
+  min-width: 100px;
+}
+
 .container {
   background-color: #11a8cd;
+  min-height: 90vh;
 }
 
 footer {
-  height: 69px;
+  height: 10vh;
   width: 100vw;
   position: absolute;
   bottom: 0;
-  background-color: #7bd9018d;
+  background-color: #7faf42;
 }
 
 .copyright {
@@ -66,21 +72,20 @@ footer {
 
 #typing-container-inner {
   margin: 0 auto;
-  min-height: 80vh;
+  height: 80vh;
   position: relative;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .typing-image {
-  width: 60vw;
-  height: 80vh;
-  left: 20%;
-  position: absolute;
+  width: 700px;
 }
 
 #start {
-  top: 350px;
-  left: 40%;
+  top: 400px;
+  left: auto;
   padding-left: 20px;
   font-size: 40pt;
   letter-spacing: 20px;
@@ -95,8 +100,8 @@ footer {
 }
 
 #flower {
-  top: 180px;
-  left: 28%;
+  top: 170px;
+  left: 30%;
   position: absolute;
 }
 
@@ -104,6 +109,41 @@ footer {
   top: 300px;
   left: 60%;
   position: absolute;
+}
+
+.tree-get {
+  width: 250px;
+  left: 8%;
+  animation: 0.2s rotation both;
+  position: absolute;
+}
+
+.flower-get {
+  width: 250px;
+  left: 8%;
+  animation: 0.2s rotation both;
+  position: absolute;
+}
+
+.grass-get {
+  width: 250px;
+  margin: 0;
+  left: 8%;
+  animation: 0.2s rotation both;
+  position: absolute;
+}
+
+/* .insect-img {
+  padding-top: 24px;
+} */
+
+@keyframes rotation{
+  0%{ transform:rotateZ(0);}
+  100%{ transform:rotateZ(-90deg);}
+}
+
+.question {
+  background: #e2ffcebe;
 }
 
 /*        how-to-playのcss        */
@@ -257,7 +297,96 @@ footer {
   width: 700px;
   height: 500px;
   position: absolute;
-  top: 100px;
-  left: 25%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: #fff;
+}
+
+/*        モーダル        */
+
+.result-modal {
+  background: #d3ff90;
+}
+
+h3 {
+  margin: 30px;
+  font-size: 50px;
+  text-align: center;
+}
+h4 {
+  padding-left: 26%;
+}
+
+#result-img {
+  background: #fff;
+  margin: 0 9%;
+  height: 140px;
+}
+
+p {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.button {
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 9%;
+  height: 80px;
+}
+
+.button button {
+  height: 60px;
+  width: 30%;
+  border-radius: 20px;
+  border: none;
+  background: #d0fb90;
+}
+
+/*        図鑑ページ        */
+
+.picturebook-container-title h2 {
+  padding-left: 20%;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.picturebook-container-inner {
+  height: 70vh;
+  min-width: 1200px;
+  background-image: url(../images/books.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+
+.picturebook-insect-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 25%;
+}
+
+.picturebook-insect-container img {
+  width: 200px;
+}
+
+.insect-block {
+  width: 50%;
+  height: 200px;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.insect-block p {
+  margin: 0;
+  padding: 0;
+}
+
+.picturebook-container-inner nav .pagination{
+  display: flex;
+  justify-content: space-between;
+  min-width: 900px;
+  padding-right: 5%;
 }

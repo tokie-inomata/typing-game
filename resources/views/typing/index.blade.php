@@ -26,7 +26,19 @@
         <h3>タイムアップ！</h3>
       </div>
       <div class="inner">
-        <p>さて何匹捕まえられたかな？</p>
+        @if(Auth::check())
+          <h4>{{$user->name}}さんの結果は・・・</h4>
+          <p id="result"></p>
+        @else
+          <h4>キミの結果は・・・</h4>
+          <p id="result"></p>
+        @endif
+        <div id="result-img">
+        </div>
+        <div class="button">
+          <button id="return">もう一回遊ぶ</button>
+          <button id="add">図鑑に登録する</button>
+        </div>
       </div>
     </div>
   </section>

@@ -26,7 +26,7 @@
       </header>
       @yield('content')
       <footer class="admin-footer">
-        <p class="admin-copyright">Copyright ©︎ 2021 Tokie Inomata</p>
+        <p class="admin-copyright">Copyright ©︎ 2021 Inomama</p>
       </footer>
     </div>
   </body>

@@ -18,7 +18,7 @@
         <div class="menu-list">
           <ul class="menu-list-ul">
             <ol><a href="/how-to-play">遊び方</a></ol>
-            <ol><a href="/">図鑑</a></ol>
+            <ol><a href="/pictureBook">図鑑</a></ol>
             @if(Auth::check())
               @if(Auth::user()->admin_flag == 1)
                 <ol><a href="/question">管理画面</a></ol>
@@ -32,7 +32,7 @@
       </header>
       @yield('content')
       <footer>
-        <p class="copyright">Copyright ©︎ 2021 Tokie Inomata</p>
+        <p class="copyright">Copyright ©︎ 2021 Inomama</p>
       </footer>
     </div>
   </body>
